@@ -5,7 +5,7 @@ button.addEventListener('click', cityName)
 function cityName(e){
     let city = document.getElementById('city').value;
     const xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=5446793341272a47004e14aaa67fc28f');
+    xmlhttp.open('GET', 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid=5446793341272a47004e14aaa67fc28f');
     xmlhttp.send();
 
     xmlhttp.onreadystatechange = (event) =>{
